@@ -1,22 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello World
-        </a>
-      </header>
-    </div>
-  );
-}
+// Function Components
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Hello World</h1>
+//     </div>
+//   );
+// }
+
+// Class Components
+// class App extends React.Component{
+//   render(){
+//     let firstName = "Mustafa";
+//     let lastName = "Ilahi";
+//     return(
+//       <div>
+//         <h1>{`Hello ${firstName} ${lastName}!`}</h1>
+//       </div>
+//     )
+//   }
+// }
+
 
 export default App;
