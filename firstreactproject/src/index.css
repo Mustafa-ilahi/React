@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.mainComponent{
+  background-color: black;
+  color: aliceblue;
+}
+
+.footer{
+  background-color: brown;
+  color: aliceblue;
+}
+
+.header{
+  background-color: blueviolet;
+  color: aliceblue;
+}

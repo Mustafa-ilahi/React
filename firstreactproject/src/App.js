@@ -1,28 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import BasicTextFields from './components/Form';
+import ContainedButtons from './components/Button'
 
-// Function Components
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1>Hello World</h1>
-//     </div>
-//   );
-// }
 
 // Class Components
-// class App extends React.Component{
-//   render(){
-//     let firstName = "Mustafa";
-//     let lastName = "Ilahi";
-//     return(
-//       <div>
-//         <h1>{`Hello ${firstName} ${lastName}!`}</h1>
-//       </div>
-//     )
-//   }
-// }
-
+class App extends React.Component{
+  render(){
+    return(
+      <div>
+          <Header />
+          <h1 className="mainComponent">Main Component</h1>
+          <Footer />
+          <BasicTextFields />
+          <ContainedButtons />
+      </div>
+    )
+  }
+}
 
 export default App;
