@@ -4,7 +4,7 @@ class Footer extends React.Component{
     render(){
         return(
             <div>
-                <h1 className="footer">Footer</h1>
+                {/* <h1 className="footer">{this.props.email}</h1> */}
             </div>
         )
     }

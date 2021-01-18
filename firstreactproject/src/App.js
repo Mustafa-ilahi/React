@@ -12,28 +12,42 @@ class App extends React.Component{
   constructor(){
     super()
     this.state = {
-      name: "Hello World",
-      // email: "mustafa@gmail.com"
+      name: "Mustafa Ilahi",
+      email : "mustafa@gmail.com"
     }
   }
-  changeName = () =>{
-    // console.log("Hello")
+  // changeName = () =>{
+  //   // console.log("Hello")
+  //   this.setState({
+  //     name : "Hello Pakistan"
+  //   })
+  // }
+
+  setValue = (e) => {
     this.setState({
-      name : "Hello Pakistan"
+      [e.target.name] : e.target.value
     })
+    // console.log(e.target.value);
   }
 
   render(){
     return(
       <div>
-        <h1>{this.state.name}</h1>
-        <button  onClick={this.changeName}>Change Name</button>
-        {/* <h2>{`Email: ` + this.state.email}</h2> */}
-          {/* <Header />
-          <h1 className="mainComponent">Main Component</h1>
+        {/* State Practice */}
+         {/* <h1>{`Name: ` +this.state.name}</h1>
+        <h2>{`Email: ` + this.state.email}</h2>
+         <input type="text" name="name" placeholder="Enter Name" onChange={(e) => this.setValue(e)}/>
+         <input type="text" name="email" placeholder="Enter Email" onChange={(e) => this.setValue(e)}/> */}
+        {/* <input name="name" type="text" onChange={(e) => this.setState({name:e.target.value})}/> */}
+        {/* <button  onClick={this.changeName}>Change Name</button> */} 
+          {/* <h1 className="mainComponent">Main Component</h1>
           <Footer />
           <BasicTextFields />
-          <ContainedButtons /> */}
+          <ContainedButtons /> */} 
+
+          {/* Props Practice */}
+          {/* <Header name={this.state.name}/>
+          <Footer email={this.state.email}/> */}
       </div>
     )
   }
